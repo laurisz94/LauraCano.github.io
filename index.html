@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header> 
+        <img src="./imagenes/logo-tersapiel2 (1).png" class="logo-tersapiel" alt="logo tersapiel">
+    </header>
+    <main>
+      <h1> Último paso para obtener tus productos de Skincare!!</h1><br><br><br>
+
+      <section id="contenido"> 
+        <div class="contenedor1">
+          <p class="p1">Carrito <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="6" cy="19" r="2" />
+            <circle cx="17" cy="19" r="2" />
+            <path d="M17 17h-11v-14h-2" />
+            <path d="M6 5l14 1l-1 7h-13" />
+          </svg></p> 
+            <div class="imagen1"> 
+              <img src="./imagenes/12.svg" alt="effaclar gel" class="producto1">
+              <p class="p4"> $447</p>
+            </div>
+
+            <div class="imagen2"> 
+              <img src="./imagenes/producto2.svg" alt="anthelios shaka" class="producto2">
+              <p class="p3"> $420</p>
+            </div>
+            
+            
+        </div>
+
+        <div class="contenedor2">
+            <p class="p2"> Pago con tarjeta de crédito</p> 
+              <p class="p5"> Total: $907</p>
+              <form action="" id="formulario" class="formulario">
+                <label for="numeroTarjeta" id="inputNumero"></label>
+                  <input type="text" id="numeroTarjeta" inputmode="numeric"  pattern="[0-9]"  minlength="16" maxlength="16"  placeholder="Número de tarjeta" required><br> <!--No me sirv e el required y me sale el autocompletao-->
+                 <!--<label for="nombreTarjeta"></label>
+                 <input type="text" id="nombreTarjeta" placeholder="Nombre del titular"><br>
+                <div class="mini-contenedor">
+                <label for="fecha"></label>
+                  <input type="text"id="fecha" placeholder="Fecha de Expiración (MM/AA)" maxlength="4" />
+                <label for="codigo"></label>
+                  <input type="text" id="codigo" placeholder="CCV" maxlength="3"><br>
+                </div>-->
+                 <div>    
+                  <button type="submit" id="boton" class="boton-validar">Pagar</button>
+                </div>   
+              </form>
+        </div>
+
+        
+      </section>
+
+      
+    </main>   
+    <footer id="footer">
+      © 2022, TersaPiel
+    </footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
